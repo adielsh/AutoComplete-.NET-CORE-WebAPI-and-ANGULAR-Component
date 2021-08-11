@@ -1,0 +1,9 @@
+
+<div>
+    <input   [(ngModel)] ="searchStr"  (keydown)="searchCity()" /> 
+    <ul>
+        <li style="cursor: pointer;" *ngFor="let item of resultsArr; index as i;">
+           <span (click)="changeInput(item)"> {{item}}</span>
+        </li>
+    </ul>
+</div>
